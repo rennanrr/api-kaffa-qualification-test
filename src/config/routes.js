@@ -1,4 +1,5 @@
 import todo from '../api/routes/todo';
+import clock from '../api/routes/clock';
 import packageJson from '../../package.json';
 
 const API_V1 = '/api/v1';
@@ -9,4 +10,5 @@ export default app => {
   });
 
   app.use(API_V1, todo);
+  app.use(API_V1, clock);
 }
